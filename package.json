@@ -1,0 +1,29 @@
+{
+  "name": "@trt2/simple-store",
+  "version": "1.0.9",
+  "description": "Simple app state/prop store",
+  "main": "./lib/SimpleStore.js",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
+    "rimraf": "^2.5.4"
+  },
+  "scripts": {
+    "test": "mocha --require babel-core/register --reporter spec tests",
+    "clean": "rimraf lib/*",
+    "build": "babel src --out-dir lib",
+    "prepublishOnly": "npm run clean && npm run build && npm run test"
+  },
+  "author": "anders",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
