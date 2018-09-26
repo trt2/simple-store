@@ -1,9 +1,10 @@
 {
   "name": "@trt2/simple-store",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Simple app state/prop store",
   "main": "./lib/SimpleStore.js",
   "license": "MIT",
+  "repository": "github:trt2/simple-store",
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.22.2",
